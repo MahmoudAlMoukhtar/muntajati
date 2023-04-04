@@ -15,6 +15,8 @@ import {Ri24HoursLine, RiWhatsappFill} from "react-icons/ri";
 import {FaLanguage} from "react-icons/fa";
 import {useState} from "react";
 import {BiLocationPlus} from "react-icons/bi";
+import {NavHashLink} from "react-router-hash-link";
+
 //import * as api from "../api/index";
 //import * as EmailValidator from "email-validator";
 //import {NavHashLink} from "react-router-hash-link";
@@ -35,9 +37,9 @@ const Footer = () => {
             "flex flex-col items-center text-center sm:text-start sm:items-start gap-10 sm:gap-4 w-64"
           }
         >
-          <Link to="/">
+          <NavHashLink to="/#">
             <h2 className="text-[#17b5fb] font-bold text-3xl">Muntajati.</h2>
-          </Link>
+          </NavHashLink>
 
           <p className="text-sm text-white">
             <span>
@@ -71,12 +73,12 @@ const Footer = () => {
                 "flex flex-col justify-center items-center text-center  sm:justify-between sm:items-start sm:text-start gap-10 sm:gap-4"
               }
             >
-              <Link to={"/"} className="text-white text-sm">
+              <NavHashLink to={"/#"} className="text-white text-sm">
                 الصفحة الرئيسية
-              </Link>
-              <Link to={"/#"} className="text-white text-sm">
+              </NavHashLink>
+              <NavHashLink to={"/#products"} className="text-white text-sm">
                 منتجاتنا
-              </Link>
+              </NavHashLink>
             </nav>
           </div>
           <div
@@ -90,12 +92,12 @@ const Footer = () => {
                 "flex flex-col justify-center items-center text-center  sm:justify-between sm:items-start sm:text-start gap-10 sm:gap-4"
               }
             >
-              <Link to="/#blogs" className="text-white text-sm">
+              <NavHashLink to="/#services" className="text-white text-sm">
                 خدماتنا
-              </Link>
-              <Link to="/auth" className="text-white text-sm">
+              </NavHashLink>
+              <NavHashLink to="/#contact" className="text-white text-sm">
                 تواصل معنا
-              </Link>
+              </NavHashLink>
             </nav>
           </div>
           <div

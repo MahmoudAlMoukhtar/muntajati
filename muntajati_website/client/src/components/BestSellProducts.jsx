@@ -13,7 +13,10 @@ function BestSellProducts() {
   if (loading) return <Spinner />;
   if (products.length === 0) return;
   return (
-    <section className="bg-[#222222] contanier flex flex-col  md:justify-between  items-center gap-20 px-8 xl:px-16 pt-10">
+    <section
+      id="products"
+      className="bg-[#222222] contanier flex flex-col  md:justify-between  items-center gap-20 px-8 xl:px-16 pt-10"
+    >
       <div className="flex flex-col items-center justify-center w-full gap-2">
         <h2 className="text-center text-[#17b5fb] font-bold text-6xl">
           المنتجات

@@ -42,16 +42,11 @@ export default function App() {
               />
             }
           />
-          <Route
-            path="/contact"
-            element={<ContactPage setNavBarModal={setNavBarModal} />}
-          />
+
           <Route
             path="/:category/:id"
             element={<DetailProduct setNavBarModal={setNavBarModal} />}
           />
-          <Route path="/auth" element={<Auth />} />
-          <Route path="/about" element={<AboutPage />} />
         </Routes>
         <Footer />
       </div>

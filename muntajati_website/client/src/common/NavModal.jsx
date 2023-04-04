@@ -1,5 +1,5 @@
 import React from "react";
-import {NavLink} from "react-router-dom";
+import {NavHashLink} from "react-router-hash-link";
 
 const activeStyle = {
   color: "#17b5fb",
@@ -39,36 +39,27 @@ const NavbarModal = ({setNavBarModal, navbarModal}) => {
           </button>
         </div>
         <ul className="flex flex-col items-center gap-6 ">
-          <NavLink
+          <NavHashLink
             style={({isActive}) => (isActive ? activeStyle : undefined)}
-            to="/"
+            to="/#"
             end
             className={styles.linkPages}
           >
             الصفحة الرئيسية
-          </NavLink>
-          <NavLink
-            style={({isActive}) => (isActive ? activeStyle : undefined)}
-            to="/allProducts"
-            className={styles.linkPages}
-          >
+          </NavHashLink>
+          <NavHashLink to="/#products" className={styles.linkPages}>
             منتجاتنا
-          </NavLink>
-          <NavLink
-            style={({isActive}) => (isActive ? activeStyle : undefined)}
-            to="/about"
-            className={styles.linkPages}
-          >
+          </NavHashLink>
+          <NavHashLink to="/#services" className={styles.linkPages}>
             خدماتنا
-          </NavLink>
+          </NavHashLink>
 
-          <NavLink
-            style={({isActive}) => (isActive ? activeStyle : undefined)}
-            to="/blogs"
+          <NavHashLink
+            to="/contact"
             className={styles.linkPages}
           >
             تواصل معنا
-          </NavLink>
+          </NavHashLink>
         </ul>
       </div>
     </div>

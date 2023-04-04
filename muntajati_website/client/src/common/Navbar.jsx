@@ -8,7 +8,7 @@ import {
 } from "react-icons/ri";
 import {useCart} from "../context/CartContext";
 import Spinner from "../Spinner";
-
+import {NavHashLink} from "react-router-hash-link";
 const styles = {
   linkPages:
     "sm:text-sm text-white py-[2px] px-[8px] hover:text-[#17b5fb] hover:font-semibold",
@@ -32,36 +32,24 @@ const Navbar = ({setNavBarModal, navbarModal}) => {
         <h2 className="text-[#fff] font-bold text-3xl">Muntajati.</h2>
       </Link>
       <ul className="invisible absolute md:flex-reverse md:items-center gap-2 md:gap-6 md:visible md:static">
-        <NavLink
+        <NavHashLink
           style={({isActive}) => (isActive ? activeStyle : undefined)}
-          to="/"
+          to="/#"
           end
           className={styles.linkPages}
         >
           الصفحة الرئيسية
-        </NavLink>
-        <NavLink
-          style={({isActive}) => (isActive ? activeStyle : undefined)}
-          to="/allProducts"
-          className={styles.linkPages}
-        >
+        </NavHashLink>
+        <NavHashLink to="/#products" className={styles.linkPages}>
           منتجاتنا
-        </NavLink>
-        <NavLink
-          style={({isActive}) => (isActive ? activeStyle : undefined)}
-          to="/about"
-          className={styles.linkPages}
-        >
+        </NavHashLink>
+        <NavHashLink to="/#services" className={styles.linkPages}>
           خدماتنا
-        </NavLink>
+        </NavHashLink>
 
-        <NavLink
-          style={({isActive}) => (isActive ? activeStyle : undefined)}
-          to="/blogs"
-          className={styles.linkPages}
-        >
+        <NavHashLink to="/#contact" className={styles.linkPages}>
           تواصل معنا
-        </NavLink>
+        </NavHashLink>
       </ul>
       <div className="flex gap-2 lg:gap-4">
         <a href="http://wa.me/+9647833205129" target="blank">
