@@ -44,19 +44,29 @@ const NavbarModal = ({setNavBarModal, navbarModal}) => {
             to="/#"
             end
             className={styles.linkPages}
+            onClick={() => setNavBarModal(false)}
           >
             الصفحة الرئيسية
           </NavHashLink>
-          <NavHashLink to="/#products" className={styles.linkPages}>
+          <NavHashLink
+            to="/#products"
+            className={styles.linkPages}
+            onClick={() => setNavBarModal(false)}
+          >
             منتجاتنا
           </NavHashLink>
-          <NavHashLink to="/#services" className={styles.linkPages}>
+          <NavHashLink
+            to="/#services"
+            className={styles.linkPages}
+            onClick={() => setNavBarModal(false)}
+          >
             خدماتنا
           </NavHashLink>
 
           <NavHashLink
-            to="/contact"
+            to="/#contact"
             className={styles.linkPages}
+            onClick={() => setNavBarModal(false)}
           >
             تواصل معنا
           </NavHashLink>

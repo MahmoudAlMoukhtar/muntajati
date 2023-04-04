@@ -43,7 +43,7 @@ const MainHeader = ({title}) => {
             id="couchImg"
             src="/layer.png"
             alt="couch"
-            className="transition duration-600 z-10 w-1/2 md:translate-x-[110px] block md:hidden"
+            className="transition duration-600 z-10 w-2/2 md:translate-x-[110px] block md:hidden"
           />
           <p
             id="main_header-descraption"
