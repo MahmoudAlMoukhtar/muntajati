@@ -42,9 +42,7 @@ const Footer = () => {
           </NavHashLink>
 
           <p className="text-sm text-white">
-            <span>
-              IQRA in the name of Allah <br /> online Quran & Arabic classes
-            </span>
+            متجر منتجاتي يوفر لك أفضل الأجهزة التقنية في متناول يديك
           </p>
           <ul className="flex items-center gap-1">
             <a href="http://wa.me/+9647833205129" target="blank">
